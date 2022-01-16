@@ -2,7 +2,16 @@ let showCredits = false;
 let showChapterScreen = false;
 let showMenu = true;
 let background = 'schoolimage';
+let l = 1280;
+let w = 720;
 
+
+function setBackground(color) {
+  fill(color);
+  rect(0,0,l,w);
+}
+
+let buttons = [];
 
 
 function setup() {
