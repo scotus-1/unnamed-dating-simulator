@@ -20,7 +20,6 @@ function setup() {
 
 
 function mouseClicked() {
-  
   for (let button of buttons) {
     if (((mouseX >= button.x) && (mouseX <= (button.x + button.length))) && ((mouseY >= button.y) && (mouseY <= (button.y + button.width))) && button.drawn) {
       button.onClick();
@@ -29,11 +28,15 @@ function mouseClicked() {
 }
 
 
-function Inject(func='none') {
-  this.func = func;
+class Inject {
+  constructor(func = 'none') {
+    this.func = func;
+  }
 }
 
+
 let drawInject = new Inject(() => {console.log('hi');});
+
 
 function draw() {
   setup();

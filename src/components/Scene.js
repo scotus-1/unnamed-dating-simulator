@@ -13,19 +13,20 @@ function textBox(content, boxColor, textColor) {
 }
 
 
-function Scene(text, img, background, chapter, choices=[], textBoxColor = "pink", textColor='#444444') {
+class Scene {
+  constructor(text, img, background, chapter, choices = [], textBoxColor = "pink", textColor = '#444444') {
     this.text = text;
     this.img = img;
     this.background = background;
     this.choices = choices;
     this.textBoxColor = "pink";
-    this.textColor = textColor
+    this.textColor = textColor;
     chapter.push(this);
-  
-    
+
     this.draw = () => {
       image(this.background, 0, 0, l, w);
       image(this.img, 400, 200, 400, 400);
       textBox(this.text, this.textBoxColor, this.textColor);
-    };
+    }
   }
+}
