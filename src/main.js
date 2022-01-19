@@ -36,7 +36,7 @@ class Inject {
 
 
 let drawInject = new Inject(() => {console.log('hi');});
-
+let choicesInject = new Inject(() => {console.log('2');});
 
 function draw() {
   setup();
@@ -44,4 +44,5 @@ function draw() {
   if (showChapterScreen) {chapters();}
   if (showCredits) {credits();}
   drawInject.func();
+  choicesInject.func();
 }

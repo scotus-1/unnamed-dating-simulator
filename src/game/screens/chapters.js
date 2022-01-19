@@ -1,6 +1,7 @@
 function runChapter(chapter) {
     let currentScene = chapter[0];
     drawInject.func = currentScene.draw;
+    choicesInject.func = currentScene.showChoices;
 }
 
 
