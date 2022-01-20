@@ -25,12 +25,17 @@ class Scene {
     
 
     this.choiceButtons = [];
-    this.choiceBtn1 = new Button(l/2, 200, 600, 200, () => {}, " ", [buttons, this.choiceButtons], "pink", "black");
-    this.choiceBtn2 = new Button(l/2, 200, 600, 200, () => {}, " ", [buttons, this.choiceButtons], "pink", "black");
-    this.choiceBtn3 = new Button(l/2, 200, 600, 200, () => {}, " ", [buttons, this.choiceButtons], "pink", "black");
+    this.choiceBtn1 = new Button(l/2, 50, 500, 100, () => {}, "", [buttons, this.choiceButtons], "pink", "black");
+    this.choiceBtn2 = new Button(l/2, 200, 500, 100, () => {}, "", [buttons, this.choiceButtons], "pink", "black");
+    this.choiceBtn3 = new Button(l/2, 350, 500, 100, () => {}, "", [buttons, this.choiceButtons], "pink", "black");
 
+    let index = 0;
     for (let choice of choices) {
-      
+      this.choiceButtons[index].text = choice['text'];
+      this.choiceButtons[index].onClick = () => {
+        drawInject.func = choice.nextScene.draw;
+      }
+      index++;
     }
 
     chapter.push(this);
@@ -44,7 +49,11 @@ class Scene {
 
     this.showChoices = () => {
       this.imgXoffset = -375;
-
+      for (let btn of this.choiceButtons) {
+        stroke('black');
+        strokeWeight(5);
+        btn.draw();
+      }
     }
   }
 }

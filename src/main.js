@@ -35,8 +35,8 @@ class Inject {
 }
 
 
-let drawInject = new Inject(() => {console.log('hi');});
-let choicesInject = new Inject(() => {console.log('2');});
+let drawInject = new Inject(() => {});
+let choicesInject = new Inject(() => {});
 
 function draw() {
   setup();

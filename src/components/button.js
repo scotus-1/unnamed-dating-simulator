@@ -26,6 +26,7 @@ class Button {
     fill(this.textColor);
     textAlign(LEFT);
     let offset = this.text.length;
+    noStroke();
     text(this.text, this.x + (this.length / offset), (this.y + this.width / 2 + 2));
   }
 }
