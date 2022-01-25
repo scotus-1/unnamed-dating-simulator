@@ -1,5 +1,5 @@
 function runChapter(chapter) {
-    let currentScene = chapter[3];
+    let currentScene = chapter[chapter.length - 1];
     drawInject.func = currentScene.draw;
 }
 

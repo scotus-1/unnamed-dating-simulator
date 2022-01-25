@@ -23,28 +23,41 @@ class Scene {
     this.textColor = textColor;
     this.imgXoffset = 0;
     
+    if (this.choices.length > 1) {
+      this.choiceButtons = [];
+      this.choiceBtn1 = new Button(l/2, 50, 500, 100, () => {}, "", [buttons, this.choiceButtons], "pink",'#444444');
+      this.choiceBtn2 = new Button(l/2, 200, 500, 100, () => {}, "", [buttons, this.choiceButtons], "pink", '#444444');
+      this.choiceBtn3 = new Button(l/2, 350, 500, 100, () => {}, "", [buttons, this.choiceButtons], "pink", '#444444');
 
-    this.choiceButtons = [];
-    this.choiceBtn1 = new Button(l/2, 50, 500, 100, () => {}, "", [buttons, this.choiceButtons], "pink",'#444444');
-    this.choiceBtn2 = new Button(l/2, 200, 500, 100, () => {}, "", [buttons, this.choiceButtons], "pink", '#444444');
-    this.choiceBtn3 = new Button(l/2, 350, 500, 100, () => {}, "", [buttons, this.choiceButtons], "pink", '#444444');
-
-    let index = 0;
-    for (let choice of choices) {
-      this.choiceButtons[index].text = choice['text'];
-      this.choiceButtons[index].onClick = () => {
-        drawInject.func = choice['nextScene'].draw;
+      let index = 0;
+      console.log(this.choices);
+      for (let choice of this.choices) {
+        this.choiceButtons[index].text = choice['text'];
+        this.choiceButtons[index].onClick = () => {
+          drawInject.func = choice['nextScene'].draw;
+        }
+        index++;
       }
-      index++;
-    }
-
+  }
     chapter.push(this);
+
+
+    // function something uh choice 
+    let nextBtn = new Button(1075, 685, 60, 20, () => {
+      drawInject.func = this.choices[0].draw;
+    }, 'Next >', [buttons], "pink", 'black'); 
+    let homeBtn = new Button(120, 685, 60, 20, () => {}, 'Home', [buttons], 'pink', 'black');
 
     this.draw = () => {
       image(this.background, 0, 0, l, w);
       image(this.img, 400 + this.imgXoffset, 200, 400, 400);
       textBox(this.text, this.textBoxColor, this.textColor);
-      if (this.choices.length != 0) {this.showChoices();}
+      homeBtn.draw();
+      if (this.choices.length > 1) {
+        this.showChoices();
+        nextBtn.drawn = false;
+      }
+      else {nextBtn.draw();}
     }
       
 
