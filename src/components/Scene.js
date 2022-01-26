@@ -30,7 +30,6 @@ class Scene {
       this.choiceBtn3 = new Button(l/2, 350, 500, 100, () => {}, "", [buttons, this.choiceButtons], "pink", '#444444');
 
       let index = 0;
-      console.log(this.choices);
       for (let choice of this.choices) {
         this.choiceButtons[index].text = choice['text'];
         this.choiceButtons[index].onClick = () => {
