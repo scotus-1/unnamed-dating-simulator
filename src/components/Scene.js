@@ -48,8 +48,8 @@ class Scene {
     let homeBtn = new Button(120, 685, 60, 20, () => {}, 'Home', [buttons], 'pink', 'black');
 
     this.draw = () => {
-      image(this.background, 0, 0, l, w);
-      image(this.img, 400 + this.imgXoffset, 200, 400, 400);
+      image(images[this.background], 0, 0, l, w);
+      image(images[this.img], 400 + this.imgXoffset, 200, 400, 400);
       textBox(this.text, this.textBoxColor, this.textColor);
       homeBtn.draw();
       if (this.choices.length > 1) {

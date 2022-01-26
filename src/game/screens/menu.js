@@ -34,5 +34,3 @@ function menu() {
     creditBtn.drawn = false;
   }
 }
-
-let username;

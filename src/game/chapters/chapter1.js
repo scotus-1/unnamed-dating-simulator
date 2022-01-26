@@ -1,23 +1,4 @@
 let ch1 = [];
-let last = new Scene('last', test, school, ch1, []);
-let test1_2 = new Scene('one', test, school, ch1, [last]);
-let test1_3 = new Scene('two', test, school, ch1, [last]);
-let test1_4 = new Scene('three', test, school, ch1, [last]);
-let test1_1 = new Scene('this is not going gmoment or any thing i dont know i keep', test, school, ch1, [
-{
-    "text": "One",
-    "nextScene": test1_2
-},
-{
-    "text": "Two",
-    "nextScene": test1_3
-},
-{
-    "text": "Three",
-    "nextScene": test1_4
-}
-]);
-
 
 let ch1_15 = new Scene('...', null, transition, ch1, []);
 //inner dialouge
