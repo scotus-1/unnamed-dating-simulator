@@ -1,7 +1,5 @@
 let images = {};
 function preload() {
-    images.test = loadImage('assets/images/characters/664971.png');
-    images.school = loadImage('assets/images/backgrounds/BasisTucson_North-2-facade.jpg');
     images.hallway = loadImage('assets/images/backgrounds/hallway.jpg');
     images.classroom = loadImage('assets/images/backgrounds/classroom.jpg');
     images.transition = loadImage('assets/images/backgrounds/transition.jpg');
