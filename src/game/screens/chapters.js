@@ -5,9 +5,8 @@ function runChapter(chapter) {
 
 
 let chapter1Btn = new Button(100, 100, 250, 100, () => {
-    console.log('hello');
     runChapter(ch1);
-  }, "Chapter One", [buttons], '#FDFD96', 'gray')
+}, "Chapter One", [buttons], '#FDFD96', 'gray')
   
 
 function chapters() {

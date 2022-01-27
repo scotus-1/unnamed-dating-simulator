@@ -12,7 +12,7 @@ function textBox(content, boxColor, textColor) {
   text(content, 120 , 520, 1050);
 }
 
-//make choices an array of dictionaries in the parameters
+
 class Scene {
   constructor(text, img, background, chapter, choices = [], textBoxColor = "pink", textColor = '#444444') {
     this.text = text;
@@ -34,6 +34,7 @@ class Scene {
         this.choiceButtons[index].text = choice['text'];
         this.choiceButtons[index].onClick = () => {
           drawInject.func = choice['nextScene'].draw;
+          console.log("buttonpressed");
         }
         index++;
       }
@@ -41,9 +42,10 @@ class Scene {
     chapter.push(this);
 
 
-    // function something uh choice 
+     
     let nextBtn = new Button(1075, 685, 60, 20, () => {
       drawInject.func = this.choices[0].draw;
+      nextBtn.drawn = false;
     }, 'Next >', [buttons], "pink", 'black'); 
     let homeBtn = new Button(120, 685, 60, 20, () => {}, 'Home', [buttons], 'pink', 'black');
 

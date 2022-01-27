@@ -1,6 +1,7 @@
 let ch1 = [];
 // refractor YN to $n for name conversion
-let ch1_15 = new Scene('...', 'empty', 'transition', ch1, []);
+// scene("text character is saying", "characterimg", "backgroundimg", chapter, choices[])
+let ch1_15 = new Scene('...', 'empty', 'transition', ch1, [ch1_16]);
 //inner dialouge
 let ch1_14 = new Scene('Theater club? What theater club?', 'empty', 'transition', ch1, [ch1_15], 'white', 'black');
 let ch1_13 = new Scene('OMG! Isn’t Thomas in that club?” “You mean the most prominent actor in this school’s history? Of course!” “Oh, please, you give him too much credit. He’s cute, though.', 'sBody', 'classroom', ch1, [ch1_14]);
