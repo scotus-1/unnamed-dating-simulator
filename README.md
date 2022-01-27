@@ -9,3 +9,4 @@ todo:
 - username addition
 - end of chapter handling
 - add background for menu
+- functionality for home button goes to menu 
