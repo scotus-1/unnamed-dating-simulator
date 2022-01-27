@@ -15,4 +15,6 @@ function preload() {
     images.sThomas = loadImage('assets/images/characters/sThomas.png');
     images.nThomas = loadImage('assets/images/characters/nThomas.png');
     images.Will = loadImage('assets/images/characters/Will.png');
+    images.empty = loadImage('assets/images/blank.png');
+    images.sBody = loadImage('assets/images/sBody.png');
 }
