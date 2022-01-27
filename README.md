@@ -1,0 +1,11 @@
+todo:
+- basic audio sound effects
+- chapters
+    - 2
+    - 3
+    - 4
+    - 5
+-rest of the chapter buttons
+- username addition
+- end of chapter handling
+- add background for menu
