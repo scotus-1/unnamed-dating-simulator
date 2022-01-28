@@ -2,6 +2,8 @@ let showCredits = false;
 let showChapterScreen = false;
 let showMenu = true;
 let background = 'schoolimage';
+let nameInput;
+let username;
 let l = 1280;
 let w = 720;
 
@@ -16,6 +18,16 @@ let buttons = [];
 
 function setup() {
   createCanvas(l, w);
+  nameInput = createInput('');
+  nameInput.position(400, 200);
+  nameInput.size(400);
+  nameInput.input(() => {
+    username = nameInput.value();
+    if (nameInput.value().length > 15) {
+      nameInput.value(nameInput.value().slice(0, -1));
+    }
+  });
+  
 }
 
 
@@ -38,9 +50,14 @@ class Inject {
 let drawInject = new Inject(() => {});
 
 function draw() {
-  setup();
   if (showMenu) {menu();}
-  if (showChapterScreen) {chapters();}
+  if (showChapterScreen == true) {
+    chapters();
+    nameInput.show();
+  } else {
+    nameInput.hide();
+  }
   if (showCredits) {credits();}
   drawInject.func();
+  console.log(username);
 }

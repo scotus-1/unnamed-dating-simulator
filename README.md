@@ -12,3 +12,4 @@ todo:
 - functionality for home button goes to menu 
 - add transitions for menu
 - add background for buttons
+- change student body photo

@@ -52,7 +52,9 @@ class Scene {
     this.draw = () => {
       image(images[this.background], 0, 0, l, w);
       image(images[this.img], 400 + this.imgXoffset, 200, 400, 400);
-      textBox(this.text, this.textBoxColor, this.textColor);
+      
+      
+      textBox(this.text.replace("$n", username), this.textBoxColor, this.textColor);
       homeBtn.draw();
       if (this.choices.length > 1) {
         this.showChoices();
