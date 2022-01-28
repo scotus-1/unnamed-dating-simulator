@@ -59,5 +59,4 @@ function draw() {
   }
   if (showCredits) {credits();}
   drawInject.func();
-  console.log(username);
 }

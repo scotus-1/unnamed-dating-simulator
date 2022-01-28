@@ -1,15 +1,14 @@
 todo:
-- basic audio sound effects
-- chapters
-    - 2
+- basic audio sound effects - alan
+- chapters - nicholas/danica
+    - 2 - basically done
     - 3
     - 4
     - 5
--rest of the chapter buttons
-- username addition
-- end of chapter handling
-- add background for menu
-- functionality for home button goes to menu 
-- add transitions for menu
-- add background for buttons
-- change student body photo
+-rest of the chapter buttons - danica
+- username addition - basically done
+- end of chapter handling - titus
+- add background for menu - danica
+- functionality for home button goes to menu - titus
+- add background for buttons - basically done
+- change student body photo -alan
