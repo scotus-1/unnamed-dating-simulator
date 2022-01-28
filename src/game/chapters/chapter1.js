@@ -1,5 +1,5 @@
 let ch1 = [];
-// refractor YN to $n for name conversion
+
 // scene("text character is saying", "characterimg", "backgroundimg", chapter, choices[])
 
 //this??? - player talking
