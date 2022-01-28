@@ -55,8 +55,7 @@ class Scene {
       image(images[this.background], 0, 0, l, w);
       image(images[this.img], 400 + this.imgXoffset, 200, 400, 400);
       
-      
-      textBox(this.text.replace("$n", username), this.textBoxColor, this.textColor);
+      textBox(this.text.split('$n').join(username), this.textBoxColor, this.textColor);
       homeBtn.draw();
       if (this.choices.length > 1) {
         this.showChoices();
@@ -68,10 +67,12 @@ class Scene {
 
     this.showChoices = () => {
       this.imgXoffset = -375;
-      for (let btn of this.choiceButtons) {
+      let index = 0;
+      for (let choice of this.choices) {
         stroke('white'); 
         strokeWeight(3);
-        btn.draw();
+        this.choiceButtons[index].draw();
+        index++;
       }
     }
   }

@@ -17,5 +17,5 @@ function preload() {
     images.Will = loadImage('assets/images/characters/Will.png');
     images.empty = loadImage('assets/images/blank.png');
     images.sBody = loadImage('assets/images/characters/sBody.png');
-    images.gym = loadImage('assets/images/backgrounds/gym.png')''
+    images.gym = loadImage('assets/images/backgrounds/gym.png');
 }

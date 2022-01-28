@@ -10,5 +10,5 @@ todo:
 - end of chapter handling - titus
 - add background for menu - danica
 - functionality for home button goes to menu - titus
-- add background for buttons - basically done
+- add background for buttons - basically done - alan
 - change student body photo -alan
