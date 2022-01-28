@@ -34,7 +34,9 @@ class Scene {
         this.choiceButtons[index].text = choice['text'];
         this.choiceButtons[index].onClick = () => {
           drawInject.func = choice['nextScene'].draw;
-          console.log("buttonpressed");
+          for (let btn of this.choiceButtons) {
+            btn.drawn = false;
+          }
         }
         index++;
       }

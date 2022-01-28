@@ -7,12 +7,16 @@ function runChapter(chapter) {
         drawInject.func = () => {text('Enter a username', 400, 200);};
     }
     
+    for (let btn of chapterButtons) {
+        btn.drawn = false;
+    }
+
 }
 
-
+let chapterButtons = [];
 let chapter1Btn = new Button(100, 100, 250, 100, () => {
     runChapter(ch1);
-}, "Chapter One", [buttons], '#FDFD96', 'gray')
+}, "Chapter One", [buttons, chapterButtons], '#FDFD96', 'gray');
   
 
 

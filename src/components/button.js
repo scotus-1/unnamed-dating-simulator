@@ -21,6 +21,7 @@ class Button {
 
   draw() {
     this.drawn = true;
+
     fill(this.background);
     rect(this.x, this.y, this.length, this.width);
     fill(this.textColor);
