@@ -1,8 +1,12 @@
 function runChapter(chapter) {
-    let currentScene = chapter[chapter.length - 1];
+    if (username) {
+        let currentScene = chapter[chapter.length - 1];
+        showChapterScreen = false;
+        drawInject.func = currentScene.draw;
+    } else {
+        drawInject.func = () => {text('Enter a username', 400, 200);};
+    }
     
-    showChapterScreen = false;
-    drawInject.func = currentScene.draw;
 }
 
 
