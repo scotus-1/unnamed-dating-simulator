@@ -24,6 +24,7 @@ class Button {
     fill(this.background);
     rect(this.x, this.y, this.length, this.width);
     fill(this.textColor);
+    if (this.bgimage) {image(images[this.bgimage], this.x, this.y, this.length, this.width);}
     textAlign(LEFT);
     let offset = this.text.length;
     noStroke();
