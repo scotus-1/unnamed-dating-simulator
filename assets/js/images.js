@@ -14,10 +14,10 @@ function preload() {
     images.hThomas = loadImage('assets/images/characters/hThomas.png');
     images.sThomas = loadImage('assets/images/characters/sThomas.png');
     images.nThomas = loadImage('assets/images/characters/nThomas.png');
-    images.Will = loadImage('assets/images/characters/Will.png');
+    images.will = loadImage('assets/images/characters/Will.png');
     images.empty = loadImage('assets/images/blank.png');
     images.sBody = loadImage('assets/images/characters/sBody.png');
     images.gym = loadImage('assets/images/backgrounds/gym.png');
-    images.theater = loadImage('assets/images/backgrounds/theater.png');
-    images.backstage = loadImage('assets/images/backgrounds/backstage.jpg');
+    images.backstage = loadImage('assets/images/backgrounds/GreenRoom.jpg');
+    images.stage = loadImage('assets/images/backgrounds/stage.jpg');
 }

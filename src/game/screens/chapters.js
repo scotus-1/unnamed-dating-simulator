@@ -17,7 +17,12 @@ let chapterButtons = [];
 let chapter1Btn = new Button(100, 100, 250, 100, () => {
     runChapter(ch1);
 }, "Chapter One", [buttons, chapterButtons], '#FDFD96', 'gray');
-  
+let chapter2Btn = new Button(100, 100, 250, 100, () => {
+    runChapter(ch2);
+}, "Chapter Two", [buttons, chapterButtons], '#FDFD96', 'gray');
+let chapter3Btn = new Button(100, 100, 250, 100, () => {
+    runChapter(ch3);
+}, "Chapter Three", [buttons, chapterButtons], '#FDFD96', 'gray');  
 
 
 function chapters() {
@@ -26,6 +31,7 @@ function chapters() {
     textAlign('center');
     noStroke();
     chapter1Btn.draw();
-    
+    chapter2Btn.draw();
+    chapter3Btn.draw();
 }
 
