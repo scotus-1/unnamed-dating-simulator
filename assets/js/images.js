@@ -19,5 +19,5 @@ function preload() {
     images.sBody = loadImage('assets/images/characters/sBody.png');
     images.gym = loadImage('assets/images/backgrounds/gym.png');
     images.GreenRoom = loadImage('assets/images/backgrounds/GreenRoom.png')
-    images.Stage = loadImage('assets/images/backgrounds')
+    images.Stage = loadImage('assets/images/backgrounds/Stage.png')
 }
