@@ -1,5 +1,3 @@
-//rising action - danica
-
 let ch2 = [];
 
 let ch2_18 = new Scene('Yessir.', 'will', 'backstage', ch2, []);
@@ -16,7 +14,7 @@ let ch2_8 = new Scene('...','empty','transition', ch2, [ch2_9], 'white', 'black'
 let ch2_7 = new Scene('Ok! I’ll set up some rough plots, then. Brb.','hThomas','backstage', ch2, [ch2_8]);
 let ch2_6 = new Scene("Y-yeah, tubular, man. I'm totally down for that.",'nThomas','backstage', ch2, [ch2_7]);
 let ch2_5 = new Scene("*blushing*",'nThomas','backstage', ch2, [ch2_6]);
-let ch2_4 = new Scene("Ooh! My favorite! I’ve got tons of ideas for that. Um… they’re all romance stories. Is that ok?",'hThomas','backstage', ch2, [ch2_5]);
+let ch2_4 = new Scene("Ooh! My favorite! I’ve got tons of ideas for that. Um… theyre all romance stories. Is that ok?",'hThomas','backstage', ch2, [ch2_5]);
 let ch2_3 = new Scene('It’s going to be some flavor of fantasy.','hThomas','backstage', ch2, [ch2_4]);
 let ch2_2 = new Scene('What’s the genre of the play?','hThomas','backstage', ch2, [ch2_3]);
 let ch2_1 = new Scene('$n! So glad to see you again! Let’s get started.','hThomas','backstage', ch2, [ch2_2]);
