@@ -20,4 +20,5 @@ function preload() {
     images.gym = loadImage('assets/images/backgrounds/gym.png');
     images.backstage = loadImage('assets/images/backgrounds/GreenRoom.jpg');
     images.stage = loadImage('assets/images/backgrounds/stage.jpg');
+    images.sCharacter = loadImage('assets/images/characters/sideCharacter.png');
 }

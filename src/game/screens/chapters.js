@@ -25,10 +25,10 @@ let chapter3Btn = new Button(900, 100, 250, 100, () => {
 }, "Chapter Three", [buttons, chapterButtons], '#FDFD96', 'gray');  
 let chapter4Btn = new Button(100, 300, 250, 100, () => {
     runChapter(ch4);
-}, "Chapter Three", [buttons, chapterButtons], '#FDFD96', 'gray');  
+}, "Chapter Four", [buttons, chapterButtons], '#FDFD96', 'gray');  
 let chapter5Btn = new Button(500, 300, 250, 100, () => {
     runChapter(ch5);
-}, "Chapter Three", [buttons, chapterButtons], '#FDFD96', 'gray');  
+}, "Chapter Five", [buttons, chapterButtons], '#FDFD96', 'gray');  
 
 
 function chapters() {
