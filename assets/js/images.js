@@ -18,4 +18,6 @@ function preload() {
     images.empty = loadImage('assets/images/blank.png');
     images.sBody = loadImage('assets/images/characters/sBody.png');
     images.gym = loadImage('assets/images/backgrounds/gym.png');
+    images.GreenRoom = loadImage('assets/images/backgrounds/GreenRoom.png')
+    images.Stage = loadImage('assets/images/backgrounds')
 }
