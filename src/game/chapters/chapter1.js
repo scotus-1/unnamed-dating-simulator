@@ -3,36 +3,37 @@ let ch1 = [];
 // scene("text character is saying", "characterimg", "backgroundimg", chapter, choices[])
 
 //this??? - player talking
-let ch1_21 = new Scene('What can I say? My stories are superb. What I read, what I write. It’s all in good taste.', '', '', ch1, []);
-let ch1_20 = new Scene('$n! $n! $n! I can’t believe he knows who you are. You’re, like, a nobody!', 'hPatricia', 'gym', ch1, [ch1_21]);
-let ch1_19_3 = new Scene('Yes! See you there.','sThomas', 'gym', ch1, [ch1_20]);
-let ch1_19_2 = new Scene('Okay then… sorry for bothering you. (game ends, player lost)','sThomas', 'gym', ch1, []);
-let ch1_19_1 = new Scene('Oh… that’s okay. Maybe next time. (game ends, player lost)','sThomas', 'gym', ch1, []);
-let ch1_19 = new Scene('Hey! $n right? It’s kinda sudden, but would you mind joining us this Friday after school in the theater to write a play? I’ve heard a lot about your stories.', 'hThomas', 'gym', ch1, [
+let ch1_22 = new Scene('What can I say? My stories are superb. What I read, what I write. It’s all in good taste.', 'sPatricia', 'gym', ch1, []);
+let ch1_21 = new Scene('$n! $n! $n! I can’t believe he knows who you are. You’re, like, a nobody!', 'hPatricia', 'gym', ch1, [ch1_22]);
+let ch1_20_3 = new Scene('Yes! See you there.','hThomas', 'gym', ch1, [ch1_21]);
+let ch1_20_2 = new Scene('Okay then… sorry for bothering you. (game ends, player lost)','sThomas', 'gym', ch1, []);
+let ch1_20_1 = new Scene('Oh… that’s okay. Maybe next time. (game ends, player lost)','sThomas', 'gym', ch1, []);
+let ch1_20 = new Scene('Hey! $n right? It’s kinda sudden, but would you mind joining us this Friday after school in the theater to write a play? I’ve heard a lot about your stories.', 'hThomas', 'gym', ch1, [
     {
         'text': 'I can’t… sorry.', 
-        'nextScene': ch1_19_1
+        'nextScene': ch1_20_1
     },
     {
         'text': 'No.', 
-        'nextScene': ch1_19_2
+        'nextScene': ch1_20_2
     },
     {
         'text': 'Sure, I’ll come.', 
-        'nextScene': ch1_19_3
+        'nextScene': ch1_20_3
     }
 ]);
-let ch1_18 = new Scene('OMG! He’s coming over here!', 'hPatricia', 'gym', ch1, [ch1_19]);
-let ch1_17 = new Scene('Look $n, that’s him. The one with the blond hair. Isn’t he beautiful?', 'hPatricia', 'gym', ch1, [
+let ch1_19 = new Scene('OMG! He’s coming over here!', 'hPatricia', 'gym', ch1, [ch1_20]);
+let ch1_18 = new Scene('Look $n, that’s him. The one with the blond hair. Isn’t he beautiful?', 'hPatricia', 'gym', ch1, [
     {
         'text': 'I don’t see what the big deal is about.', 
-        'nextScene': ch1_18
+        'nextScene': ch1_19
     },
     {
         'text': 'I guess he’s okay…', 
-        'nextScene': ch1_18
+        'nextScene': ch1_19
     }
 ]);
+let ch1_17 = new Scene('...', 'empty', 'transition', ch1, [ch1_18],'white', 'black');
 let ch1_16_3 = new Scene('What’s wrong with you? Have you seen him?', 'hPatricia', 'hallway', ch1, [ch1_17]);
 let ch1_16_2 = new Scene('That’s ‘cause you have no taste. Your fictional characters set the standard too high. You gotta see him for yourself.', 'hPatricia', 'hallway', ch1, [ch1_17]);
 let ch1_16_1 = new Scene('Are you serious?? Only the nicest, handsomest, bestest guy in the school!', 'hPatricia', 'hallway', ch1, [ch1_17]);
@@ -51,7 +52,7 @@ let ch1_16 = new Scene('I don’t like theater at all, but I would join for Thom
     }
 ]);
 //inner dialouge
-let ch1_15 = new Scene('...', 'empty', 'transition', ch1, [ch1_16]);
+let ch1_15 = new Scene('...', 'empty', 'transition', ch1, [ch1_16],'white', 'black');
 let ch1_14 = new Scene('Theater club? What theater club?', 'empty', 'transition', ch1, [ch1_15], 'white', 'black');
 let ch1_13 = new Scene('OMG! Isn’t Thomas in that club? You mean the most prominent actor in this school’s history? Of course! Oh, please, you give him too much credit. He’s cute, though.', 'sBody', 'classroom', ch1, [ch1_14]);
 let ch1_12 = new Scene('Nice to meet you, Ami. You might want to consider joining drama club. I hear they’re putting a play together.', 'nTeacher', 'classroom', ch1, [ch1_13]);
