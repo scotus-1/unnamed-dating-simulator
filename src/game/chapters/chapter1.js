@@ -78,5 +78,5 @@ let ch1_2 = new Scene('First day of senior year! How are you feeling?', 'hPatric
         'text': 'Eh, same as always.', 
         'nextScene': ch1_2_3
     }
-]);
-let ch1_1 = new Scene('Hey $n!', 'empty', 'hallway', ch1, [ch1_2]);
+],'ch1_2_audio');
+let ch1_1 = new Scene('Hey $n!', 'empty', 'hallway', ch1, [ch1_2], 'ch1_1_audio');
