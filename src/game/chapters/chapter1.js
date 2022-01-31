@@ -1,4 +1,4 @@
-let ch1 = [];
+let ch1 = new Chapter('Chapter One', ch2);
 
 // scene("text character is saying", "characterimg", "backgroundimg", chapter, choices[])
 let ch1_21 = new Scene('What can I say? My stories are superb. What I read, what I write. It’s all in good taste.', 'hPatricia', 'gym', ch1, []);

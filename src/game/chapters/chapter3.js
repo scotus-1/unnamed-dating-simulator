@@ -1,6 +1,4 @@
-//climax - danica
-
-let ch3 = [];
+let ch3 = new Chapter('Chapter Three', ch3);
 
 let ch3_5_2 = new Scene('end game ig', 'empty', 'transition', ch3, []);
 let ch3_5_1 = new Scene("Guess what, Will? We’re not doomed.", 'hThomas', 'backstage', ch3, []);

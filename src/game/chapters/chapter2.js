@@ -1,4 +1,4 @@
-let ch2 = [];
+let ch2 = new Chapter('Chapter Two', ch3);
 
 let ch2_18 = new Scene('Yessir.', 'will', 'backstage', ch2, []);
 let ch2_17 = new Scene("Go gather up the theater kids instead of wasting air, would you?", 'sThomas', 'backstage', ch2, [ch2_18])

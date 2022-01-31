@@ -49,7 +49,7 @@ class Scene {
         index++;
       }
   }
-    chapter.push(this);
+    chapter.scenes.push(this);
 
 
      
@@ -58,7 +58,7 @@ class Scene {
       if (this.choices.length == 0) {
         nextBtn.drawn = false;
         homeBtn.drawn = false;
-        let endchapter = new endOfchapter('End of Chapter', ch2);
+        let endchapter = new endOfchapter('End of ' + this.chapter.chtext , this.chapter.nextCh);
         drawInject.func = endchapter.draw;
         
       } else {

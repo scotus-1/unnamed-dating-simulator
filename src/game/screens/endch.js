@@ -1,5 +1,5 @@
 class endOfchapter {
-    constructor(endtext, nextCh) {
+    constructor(endtext, nextCh = null) {
         this.text = endtext;
         this.nextCh = nextCh;
 
@@ -27,7 +27,10 @@ class endOfchapter {
             text(this.text, 600, 300);
             textAlign();
             this.endNextBtn.draw();
-            this.endhomeBtn.draw();
+            if (this.nextCh != null) {
+                this.endhomeBtn.draw();
+            }
+            
         }
     }
 }

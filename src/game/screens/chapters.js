@@ -1,6 +1,6 @@
 function runChapter(chapter) {
     if (username) {
-        let currentScene = chapter[chapter.length - 1];
+        let currentScene = chapter.scenes[chapter.length - 1];
         drawInject.func = currentScene.draw;
         showChapterScreen = false;
         if (currentScene.audio != null) {
