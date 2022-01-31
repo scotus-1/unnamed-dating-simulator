@@ -11,8 +11,8 @@ let startBtn = new Button(
     },
     "start",
     [buttons],
+    'gray',
     'black',
-    'white',
     null,
     'click'
   );
@@ -20,24 +20,24 @@ let startBtn = new Button(
 
 let creditBtn = new Button(w / 2 + 150 ,l / 2 - 100, 200, 100, () => {
       showCredits = true;
-    }, "credits", [buttons], 'black', 'white', null,  'click'
+    }, "credits", [buttons], 'gray', 'black', null,  'click'
   );
 
 
 function menu() {
-  fill("pink");
-  rect(0, 0, l, w);
+  image(images['menuBG'],0,0,l,w);
+  fill('pink');
+  rect(325, 125, 630, 115);
   textSize(50);
   fill("black");
   textFont("Georgia");
-  
   textAlign("center");
   text("UNNAMED DATING SIM", l / 2, 200);
   if (showCredits == false) {
     startBtn.draw();
     creditBtn.draw();
   } else {
-    startBtn.drawn = false;
-    creditBtn.drawn = false;
-  }
+   startBtn.drawn = false;
+   creditBtn.drawn = false; 
+ }
 }

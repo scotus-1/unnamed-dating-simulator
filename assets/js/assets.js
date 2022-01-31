@@ -26,4 +26,5 @@ function preload() {
     images.clapping = loadImage('assets/images/backgrounds/clapping.jpg')
     soundFormats('mp3');
     audio.click = loadSound('assets/audio/btn_click_audio.mp3');
+    images.menuBG = loadImage('assets/images/backgrounds/menuBackground.gif')
 }

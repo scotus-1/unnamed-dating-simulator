@@ -4,7 +4,7 @@ function runChapter(chapter) {
         drawInject.func = currentScene.draw;
         showChapterScreen = false;
     } else {
-        drawInject.func = () => {text('Enter a username', 400, 500);};
+        drawInject.func = () => {text('Please enter a username before starting:', 400, 75);};
     }
     
     for (let btn of chapterButtons) {
@@ -15,13 +15,13 @@ function runChapter(chapter) {
 }
 
 let chapterButtons = [];
-let chapter1Btn = new Button(100, 100, 300, 200, () => {
+let chapter1Btn = new Button(100, 200, 300, 200, () => {
     runChapter(ch1);
 }, "Chapter One", [buttons, chapterButtons], 'white', 'black', 'hallway');
-let chapter2Btn = new Button(500, 100, 300, 200, () => {
+let chapter2Btn = new Button(500, 200, 300, 200, () => {
     runChapter(ch2);
 }, "Chapter Two", [buttons, chapterButtons], 'white', 'black', 'script');
-let chapter3Btn = new Button(900, 100, 300, 200, () => {
+let chapter3Btn = new Button(900, 200, 300, 200, () => {
     runChapter(ch3);
 }, "Chapter Three", [buttons, chapterButtons], 'white', 'black', 'backstage');  
 let chapter4Btn = new Button(100, 500, 300, 200, () => {
@@ -35,6 +35,8 @@ let chapter5Btn = new Button(500, 500, 300, 200, () => {
 
 function chapters() {
     setBackground('pink');
+    drawInject.func = () => {text('Please enter a username before starting:', 400, 75);};
+    textAlign('right');
     textSize(20);
     textAlign('center');
     noStroke();
