@@ -1,7 +1,7 @@
 let ch1 = [];
 
 // scene("text character is saying", "characterimg", "backgroundimg", chapter, choices[])
-let ch1_21 = new Scene('What can I say? My stories are superb. What I read, what I write. It’s all in good taste.', '', '', ch1, []);
+let ch1_21 = new Scene('What can I say? My stories are superb. What I read, what I write. It’s all in good taste.', 'hPatricia', 'gym', ch1, []);
 let ch1_20 = new Scene('$n! $n! $n! I can’t believe he knows who you are. You’re, like, a nobody!', 'hPatricia', 'gym', ch1, [ch1_21]);
 let ch1_19_3 = new Scene('Yes! See you there.','hThomas', 'gym', ch1, [ch1_20]);
 let ch1_19_2 = new Scene('Okay then… sorry for bothering you. (game ends, player lost)','sThomas', 'gym', ch1, []);
@@ -49,8 +49,8 @@ let ch1_16 = new Scene('I don’t like theater at all, but I would join for Thom
     }
 ]);
 //inner dialouge
-let ch1_15 = new Scene('...', 'empty', 'transition', ch1, [ch1_16], 'black', 'white', 'white');
-let ch1_14 = new Scene('Theater club? What theater club?', 'empty', 'transition', ch1, [ch1_15], 'black', 'white', 'white');
+let ch1_15 = new Scene('...', 'empty', 'transition', ch1, [ch1_16], null,  'black', 'white', 'white');
+let ch1_14 = new Scene('Theater club? What theater club?', 'empty', 'transition', ch1, [ch1_15], null, 'black', 'white', 'white');
 let ch1_13 = new Scene('OMG! Isn’t Thomas in that club? You mean the most prominent actor in this school’s history? Of course! Oh, please, you give him too much credit. He’s cute, though.', 'sBody', 'classroom', ch1, [ch1_14]);
 let ch1_12 = new Scene('Nice to meet you, Ami. You might want to consider joining drama club. I hear they’re putting a play together.', 'nTeacher', 'classroom', ch1, [ch1_13]);
 let ch1_11 = new Scene('Hello, I’m Ami~~~~~~~~. Pink is the new black, I love socializing, and my goal for this year is to get the lead role in a play.', 'hAmi', 'classroom', ch1, [ch1_12]);

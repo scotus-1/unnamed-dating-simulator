@@ -14,7 +14,7 @@ function textBox(content, boxColor, textColor) {
 
 
 class Scene {
-  constructor(text, img, background, chapter, choices = [], textBoxColor = "pink", textColor = '#444444', btnsTextColor = 'black') {
+  constructor(text, img, background, chapter, choices = [], audioS, textBoxColor = "pink", textColor = '#444444', btnsTextColor = 'black') {
     this.text = text;
     this.img = img;
     this.background = background;
@@ -23,6 +23,8 @@ class Scene {
     this.textColor = textColor;
     this.imgXoffset = 0;
     this.btnsTextColor = btnsTextColor;
+    this.audio = audioS;
+
     
     if (this.choices.length > 1) {
       this.choiceButtons = [];
@@ -35,6 +37,11 @@ class Scene {
         this.choiceButtons[index].text = choice['text'];
         this.choiceButtons[index].onClick = () => {
           drawInject.func = choice['nextScene'].draw;
+          if (choice['nextScene'].audio != null) {
+            audio[choice['nextScene'].audio].play();
+            audio[this.audio].stop();
+          }
+          
           for (let btn of this.choiceButtons) {
             btn.drawn = false;
           }
@@ -47,8 +54,20 @@ class Scene {
 
      
     let nextBtn = new Button(1075, 685, 60, 20, () => {
-      drawInject.func = this.choices[0].draw;
-      nextBtn.drawn = false;
+      console.log(this.choices.length);
+      if (this.choices.length == 0) {
+        nextBtn.drawn = false;
+        drawInject.func = () => {};
+        showMenu = true;
+      } else {
+        drawInject.func = this.choices[0].draw;
+        nextBtn.drawn = false;
+        if (this.audio != null && this.choices[0].audio != null){
+        audio[this.choices[0].audio].play();
+        audio[this.audio].stop();
+      }
+      }
+      
     }, 'Next >', [buttons], textBoxColor, btnsTextColor, null, 'click'); 
     let homeBtn = new Button(120, 685, 60, 20, () => {
       drawInject.func = () => {};
