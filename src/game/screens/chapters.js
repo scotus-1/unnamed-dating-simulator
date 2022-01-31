@@ -1,16 +1,17 @@
 function runChapter(chapter) {
     if (username) {
         let currentScene = chapter[chapter.length - 1];
-        showChapterScreen = false;
         drawInject.func = currentScene.draw;
+        showChapterScreen = false;
     } else {
-        drawInject.func = () => {text('Enter a username', 400, 200);};
+        drawInject.func = () => {text('Enter a username', 400, 500);};
     }
     
     for (let btn of chapterButtons) {
         btn.drawn = false;
     }
-
+    startBtn.drawn = false;
+    creditBtn.drawn = false;
 }
 
 let chapterButtons = [];
@@ -29,6 +30,7 @@ let chapter4Btn = new Button(100, 500, 300, 200, () => {
 let chapter5Btn = new Button(500, 500, 300, 200, () => {
     runChapter(ch5);
 }, "Chapter Five", [buttons, chapterButtons], 'white', 'black', 'clapping');  
+
 
 
 function chapters() {

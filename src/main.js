@@ -19,7 +19,7 @@ let buttons = [];
 function setup() {
   createCanvas(l, w);
   nameInput = createInput('');
-  nameInput.position(400, 200);
+  nameInput.position(400, 500);
   nameInput.size(400);
   nameInput.input(() => {
     username = nameInput.value();
@@ -35,6 +35,9 @@ function mouseClicked() {
   for (let button of buttons) {
     if (((mouseX >= button.x) && (mouseX <= (button.x + button.length))) && ((mouseY >= button.y) && (mouseY <= (button.y + button.width))) && button.drawn) {
       button.onClick();
+      if (button.audio != null){
+        audio[button.audio].play(); 
+      }
     }
   }
 }

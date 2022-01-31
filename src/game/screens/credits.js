@@ -1,6 +1,6 @@
 let exitCreditsBtn = new Button(590, 360, 100, 50, () => {
   showCredits = false;
-}, "exit", [buttons]
+}, "exit", [buttons], 'black', 'white', null, 'click'
 );
 
 

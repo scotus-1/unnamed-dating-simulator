@@ -1,5 +1,5 @@
 class Button {
-  constructor(x, y, l, w, onClick, t = '', appendTo = [], background = 'black', textColor = 'white', bgimage = null) {
+  constructor(x, y, l, w, onClick, t = '', appendTo = [], background = 'black', textColor = 'white', bgimage = null, audio = null) {
     this.x = x;
     this.y = y;
     this.length = l;
@@ -9,6 +9,7 @@ class Button {
     this.drawn = false;
     this.background = background;
     this.bgimage = bgimage;
+    this.audio = audio;
 
     for (let list of appendTo) {
       list.push(this);
@@ -24,7 +25,7 @@ class Button {
     fill(this.background);
     rect(this.x, this.y, this.length, this.width);
     fill(this.textColor);
-    if (this.bgimage) {image(images[this.bgimage], this.x, this.y, this.length, this.width);}
+    if (this.bgimage != null) {image(images[this.bgimage], this.x, this.y, this.length, this.width);}
     textAlign(LEFT);
     let offset = this.text.length;
     noStroke();
