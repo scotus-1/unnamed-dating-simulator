@@ -49,7 +49,7 @@ class Scene {
     let nextBtn = new Button(1075, 685, 60, 20, () => {
       drawInject.func = this.choices[0].draw;
       nextBtn.drawn = false;
-    }, 'Next >', [buttons], textBoxColor, btnsTextColor); 
+    }, 'Next >', [buttons], textBoxColor, btnsTextColor, null, 'click'); 
     let homeBtn = new Button(120, 685, 60, 20, () => {
       drawInject.func = () => {};
       nextBtn.drawn = false;
@@ -59,7 +59,7 @@ class Scene {
       }
     }
       showMenu = true;
-    }, 'Home', [buttons], textBoxColor, btnsTextColor);
+    }, 'Home', [buttons], textBoxColor, btnsTextColor, null, 'click');
 
     this.draw = () => {
       image(images[this.background], 0, 0, l, w);
