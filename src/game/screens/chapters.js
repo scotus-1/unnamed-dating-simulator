@@ -11,7 +11,6 @@ function runChapter(chapter) {
     }
     
     for (let btn of chapterButtons) {
-        console.log(btn);
         btn.drawn = false;
     }
     startBtn.drawn = false;

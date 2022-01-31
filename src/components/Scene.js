@@ -57,11 +57,14 @@ class Scene {
       console.log(this.choices.length);
       if (this.choices.length == 0) {
         nextBtn.drawn = false;
-        drawInject.func = () => {};
-        showMenu = true;
+        homeBtn.drawn = false;
+        let endchapter = new endOfchapter('End of Chapter', ch2);
+        drawInject.func = endchapter.draw;
+        
       } else {
         drawInject.func = this.choices[0].draw;
         nextBtn.drawn = false;
+        homeBtn.drawn = false;
         if (this.audio != null && this.choices[0].audio != null){
         audio[this.choices[0].audio].play();
         audio[this.audio].stop();
