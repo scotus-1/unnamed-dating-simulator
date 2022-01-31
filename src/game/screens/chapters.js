@@ -3,11 +3,15 @@ function runChapter(chapter) {
         let currentScene = chapter[chapter.length - 1];
         drawInject.func = currentScene.draw;
         showChapterScreen = false;
+        if (currentScene.audio != null) {
+        audio[currentScene.audio].play();
+        }
     } else {
-        drawInject.func = () => {text('Enter a username', 400, 500);};
+        drawInject.func = () => {text('Enter a username', 400, 400);};
     }
     
     for (let btn of chapterButtons) {
+        console.log(btn);
         btn.drawn = false;
     }
     startBtn.drawn = false;
@@ -15,25 +19,21 @@ function runChapter(chapter) {
 }
 
 let chapterButtons = [];
-let chapter1Btn = new Button(100, 100, 250, 100, () => {
+let chapter1Btn = new Button(100, 100, 300, 200, () => {
     runChapter(ch1);
-}, "Chapter One", [buttons, chapterButtons], '#FDFD96', 'gray');
-
-let chapter2Btn = new Button(500, 100, 250, 100, () => {
+}, "Chapter One", [buttons, chapterButtons], 'white', 'black', 'hallway', 'click');
+let chapter2Btn = new Button(500, 100, 300, 200, () => {
     runChapter(ch2);
-}, "Chapter Two", [buttons, chapterButtons], '#FDFD96', 'gray');
-
-let chapter3Btn = new Button(900, 100, 250, 100, () => {
+}, "Chapter Two", [buttons, chapterButtons], 'white', 'black', 'script', 'click');
+let chapter3Btn = new Button(900, 100, 300, 200, () => {
     runChapter(ch3);
-}, "Chapter Three", [buttons, chapterButtons], '#FDFD96', 'gray'); 
-
-let chapter4Btn = new Button(100, 300, 250, 100, () => {
+}, "Chapter Three", [buttons, chapterButtons], 'white', 'black', 'backstage', 'click');  
+let chapter4Btn = new Button(100, 500, 300, 200, () => {
     runChapter(ch4);
-}, "Chapter Four", [buttons, chapterButtons], '#FDFD96', 'gray');  
-
-let chapter5Btn = new Button(500, 300, 250, 100, () => {
+}, "Chapter Four", [buttons, chapterButtons], 'white', 'black', 'stage', 'click');  
+let chapter5Btn = new Button(500, 500, 300, 200, () => {
     runChapter(ch5);
-}, "Chapter Five", [buttons, chapterButtons], '#FDFD96', 'gray');  
+}, "Chapter Five", [buttons, chapterButtons], 'white', 'black', 'clapping', 'click');  
 
 
 
