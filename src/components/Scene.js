@@ -53,8 +53,10 @@ class Scene {
     let nextBtn = new Button(1075, 685, 60, 20, () => {
       drawInject.func = this.choices[0].draw;
       nextBtn.drawn = false;
-      audio[this.choices[0].audio].play();
-      audio[this.audio].stop();
+      if (this.audio != null && this.choices[0].audio != null){
+        audio[this.choices[0].audio].play();
+        audio[this.audio].stop();
+      }
     }, 'Next >', [buttons], textBoxColor, btnsTextColor, null, 'click'); 
     let homeBtn = new Button(120, 685, 60, 20, () => {
       drawInject.func = () => {};
