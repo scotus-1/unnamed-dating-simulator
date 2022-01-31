@@ -4,7 +4,7 @@ function runChapter(chapter) {
         drawInject.func = currentScene.draw;
         showChapterScreen = false;
     } else {
-        drawInject.func = () => {text('Enter a username', 400, 200);};
+        drawInject.func = () => {text('Enter a username', 400, 500);};
     }
     
     for (let btn of chapterButtons) {

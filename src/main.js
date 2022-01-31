@@ -19,7 +19,7 @@ let buttons = [];
 function setup() {
   createCanvas(l, w);
   nameInput = createInput('');
-  nameInput.position(400, 200);
+  nameInput.position(400, 500);
   nameInput.size(400);
   nameInput.input(() => {
     username = nameInput.value();
