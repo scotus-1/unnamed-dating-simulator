@@ -10,13 +10,17 @@ let startBtn = new Button(
       startBtn.drawn = false;
     },
     "start",
-    [buttons]
+    [buttons],
+    'black',
+    'white',
+    null,
+    'click'
   );
 
 
 let creditBtn = new Button(w / 2 + 150 ,l / 2 - 100, 200, 100, () => {
       showCredits = true;
-    }, "credits", [buttons]
+    }, "credits", [buttons], 'black', 'white', null,  'click'
   );
 
 

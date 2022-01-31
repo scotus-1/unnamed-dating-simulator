@@ -1,4 +1,5 @@
 let images = {};
+let audio = {};
 function preload() {
     images.hallway = loadImage('assets/images/backgrounds/hallway.jpg');
     images.classroom = loadImage('assets/images/backgrounds/classroom.jpg');
@@ -21,4 +22,8 @@ function preload() {
     images.backstage = loadImage('assets/images/backgrounds/GreenRoom.jpg');
     images.stage = loadImage('assets/images/backgrounds/stage.jpg');
     images.sCharacter = loadImage('assets/images/characters/sideCharacter.png');
+
+
+    soundFormats('mp3');
+    audio.click = loadSound('assets/audio/btn_click_audio.mp3');
 }

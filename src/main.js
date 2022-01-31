@@ -35,6 +35,9 @@ function mouseClicked() {
   for (let button of buttons) {
     if (((mouseX >= button.x) && (mouseX <= (button.x + button.length))) && ((mouseY >= button.y) && (mouseY <= (button.y + button.width))) && button.drawn) {
       button.onClick();
+      if (button.audio != null){
+        audio[button.audio].play(); 
+      }
     }
   }
 }
