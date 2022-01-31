@@ -50,7 +50,16 @@ class Scene {
       drawInject.func = this.choices[0].draw;
       nextBtn.drawn = false;
     }, 'Next >', [buttons], textBoxColor, btnsTextColor); 
-    let homeBtn = new Button(120, 685, 60, 20, () => {}, 'Home', [buttons], textBoxColor, btnsTextColor);
+    let homeBtn = new Button(120, 685, 60, 20, () => {
+      drawInject.func = () => {};
+      nextBtn.drawn = false;
+      if (this.choices.length > 1){
+      for (let btn of this.choiceButtons) {
+        btn.drawn = false;
+      }
+    }
+      showMenu = true;
+    }, 'Home', [buttons], textBoxColor, btnsTextColor);
 
     this.draw = () => {
       image(images[this.background], 0, 0, l, w);
