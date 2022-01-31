@@ -1,34 +1,40 @@
 function runChapter(chapter) {
     if (username) {
         let currentScene = chapter[chapter.length - 1];
-        showChapterScreen = false;
         drawInject.func = currentScene.draw;
+        showChapterScreen = false;
     } else {
-        drawInject.func = () => {text('Enter a username', 400, 200);};
+        drawInject.func = () => {text('Enter a username', 400, 500);};
     }
     
     for (let btn of chapterButtons) {
         btn.drawn = false;
     }
-
+    startBtn.drawn = false;
+    creditBtn.drawn = false;
 }
 
 let chapterButtons = [];
 let chapter1Btn = new Button(100, 100, 250, 100, () => {
     runChapter(ch1);
 }, "Chapter One", [buttons, chapterButtons], '#FDFD96', 'gray');
+
 let chapter2Btn = new Button(500, 100, 250, 100, () => {
     runChapter(ch2);
 }, "Chapter Two", [buttons, chapterButtons], '#FDFD96', 'gray');
+
 let chapter3Btn = new Button(900, 100, 250, 100, () => {
     runChapter(ch3);
-}, "Chapter Three", [buttons, chapterButtons], '#FDFD96', 'gray');  
+}, "Chapter Three", [buttons, chapterButtons], '#FDFD96', 'gray'); 
+
 let chapter4Btn = new Button(100, 300, 250, 100, () => {
     runChapter(ch4);
-}, "Chapter Three", [buttons, chapterButtons], '#FDFD96', 'gray');  
+}, "Chapter Four", [buttons, chapterButtons], '#FDFD96', 'gray');  
+
 let chapter5Btn = new Button(500, 300, 250, 100, () => {
     runChapter(ch5);
-}, "Chapter Three", [buttons, chapterButtons], '#FDFD96', 'gray');  
+}, "Chapter Five", [buttons, chapterButtons], '#FDFD96', 'gray');  
+
 
 
 function chapters() {

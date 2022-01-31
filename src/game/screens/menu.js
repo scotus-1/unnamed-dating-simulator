@@ -5,6 +5,9 @@ let startBtn = new Button(
     100,
     () => {
       showChapterScreen = true;
+      showMenu = false;
+      creditBtn.drawn = false;
+      startBtn.drawn = false;
     },
     "start",
     [buttons]
