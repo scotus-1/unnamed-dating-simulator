@@ -27,4 +27,27 @@ function preload() {
     soundFormats('mp3');
     audio.click = loadSound('assets/audio/btn_click_audio.mp3');
     images.menuBG = loadImage('assets/images/backgrounds/menuBackground.gif')
+    audio.ch1 = loadSound('assets/audio/ch1_1_audio.mp3');
+    audio.ch1_2 = loadSound('assets/audio/ch1_2_audio.mp3');
+    audio.ch1_2_1 = loadSound('assets/audio/ch1_2_1_audio.mp3');
+    audio.ch1_2_2 = loadSound('assets/audio/ch1_2_2_audio.mp3');
+    audio.ch1_2_3 = loadSound('assets/audio/ch1_2_3_audio.mp3');
+    audio.ch1_3 = loadSound('assets/audio/ch1_3_audio.mp3');
+    audio.ch1_4 = loadSound('assets/audio/ch1_4_audio.mp3');
+    audio.ch1_5 = loadSound('assets/audio/ch1_5_audio.mp3');
+    audio.ch1_6 = loadSound('assets/audio/ch1_6_audio.mp3');
+    audio.ch1_7 = loadSound('assets/audio/ch1_7_audio.mp3');
+    audio.ch1_9 = loadSound('assets/audio/ch1_9_audio.mp3');
+    audio.ch1_11 = loadSound('assets/audio/ch1_11_audio.mp3');
+    audio.ch1_12 = loadSound('assets/audio/ch1_12_audio.mp3');
+    audio.ch1_13 = loadSound('assets/audio/ch1_13_audio.mp3');
+    audio.ch1_16_1 = loadSound('assets/audio/ch1_16_1_audio.mp3');
+    audio.ch1_16_2 = loadSound('assets/audio/ch1_16_2_audio.mp3');
+    audio.ch1_16_3 = loadSound('assets/audio/ch1_16_3_audio.mp3');
+    audio.ch1_17 = loadSound('assets/audio/ch1_17_audio.mp3');
+    audio.ch1_18 = loadSound('assets/audio/ch1_18_audio.mp3');
+    audio.ch1_19 = loadSound('assets/audio/ch1_19_audio.mp3');
+    audio.ch1_19_1 = loadSound('assets/audio/ch1_19_1_audio.mp3');
+    audio.ch1_19_2 = loadSound('assets/audio/ch1_19_2_audio.mp3');
+    audio.ch1_19_3 = loadSound('assets/audio/ch1_19_3_audio.mp3');
 }
