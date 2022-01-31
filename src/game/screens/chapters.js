@@ -5,7 +5,7 @@ function runChapter(chapter) {
         showChapterScreen = false;
         audio[currentScene.audio].play();
     } else {
-        drawInject.func = () => {text('Enter a username', 400, 500);};
+        drawInject.func = () => {text('Enter a username', 400, 400);};
     }
     
     for (let btn of chapterButtons) {
