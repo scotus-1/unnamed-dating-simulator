@@ -22,33 +22,44 @@ function runChapter(chapter) {
 let chapterButtons = [];
 let chapter1Btn = new Button(100, 200, 300, 200, () => {
     runChapter(ch1);
-}, "Chapter One", [buttons, chapterButtons], 'white', 'black', 'hallway');
+}, "Chapter One", [buttons, chapterButtons], 'white', 'black', 'hallway', 2);
 let chapter2Btn = new Button(500, 200, 300, 200, () => {
     runChapter(ch2);
-}, "Chapter Two", [buttons, chapterButtons], 'white', 'black', 'script');
+}, "Chapter Two", [buttons, chapterButtons], 'white', 'black', 'script', 2);
 let chapter3Btn = new Button(900, 200, 300, 200, () => {
     runChapter(ch3);
-}, "Chapter Three", [buttons, chapterButtons], 'white', 'black', 'backstage', 'click');  
+}, "Chapter Three", [buttons, chapterButtons], 'white', 'black', 'backstage', 'click', 2);  
 let chapter4Btn = new Button(100, 500, 300, 200, () => {
     runChapter(ch4);
-}, "Chapter Four", [buttons, chapterButtons], 'white', 'black', 'stage', 'click');  
+}, "Chapter Four", [buttons, chapterButtons], 'white', 'black', 'stage', 'click', 2);  
 let chapter5Btn = new Button(500, 500, 300, 200, () => {
     runChapter(ch5);
-}, "Chapter Five", [buttons, chapterButtons], 'white', 'black', 'clapping', 'click');  
+}, "Chapter Five", [buttons, chapterButtons], 'white', 'black', 'clapping', 'click', 2);  
 
 
 
 function chapters() {
-    setBackground('pink');
+    image(images['menuBG'],0,0,l,w);
+    //rect
     drawInject.func = () => {text('Please enter a username before starting:', 400, 75);};
     textAlign('right');
     textSize(20);
     textAlign('center');
     noStroke();
+    strokeWeight(5);
+    stroke('pink');
     chapter1Btn.draw();
+    strokeWeight(5);
+    stroke('pink');
     chapter2Btn.draw();
+    strokeWeight(5);
+    stroke('pink');
     chapter3Btn.draw();
+    strokeWeight(5);
+    stroke('pink');
     chapter4Btn.draw();
+    strokeWeight(5);
+    stroke('pink');
     chapter5Btn.draw();
 }
 
