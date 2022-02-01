@@ -3,8 +3,8 @@ function runChapter(chapter) {
         let currentScene = chapter.scenes[chapter.scenes.length - 1];
         drawInject.func = currentScene.draw;
         showChapterScreen = false;
-        if (currentScene.audio != null) {
-        audio[currentScene.audio].play();
+        if (currentScene.audioS != null && currentScene.audioS != undefined) {
+        audio[currentScene.audioS].play();
         }
     } else {
         drawInject.func = () => {text('Please enter a username before starting:', 400, 75);};

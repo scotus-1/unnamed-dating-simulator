@@ -1,11 +1,12 @@
 let ch1 = new Chapter('Chapter One', ch2);
 
 // scene("text character is saying", "characterimg", "backgroundimg", chapter, choices[])
-let ch1_21 = new Scene('What can I say? My stories are superb. What I read, what I write. It’s all in good taste.', 'hPatricia', 'gym', ch1, []);
+// add ch1_20
+let ch1_21 = new Scene('What can I say? My stories are superb. What I read, what I write. It’s all in good taste.', 'empty', 'gym', ch1, []);
 let ch1_20 = new Scene('$n! $n! $n! I can’t believe he knows who you are. You’re, like, a nobody!', 'hPatricia', 'gym', ch1, [ch1_21]);
-let ch1_19_3 = new Scene('Yes! See you there.','hThomas', 'gym', ch1, [ch1_20]);
-let ch1_19_2 = new Scene('Okay then… sorry for bothering you. (game ends, player lost)','sThomas', 'gym', ch1, []);
-let ch1_19_1 = new Scene('Oh… that’s okay. Maybe next time. (game ends, player lost)','sThomas', 'gym', ch1, []);
+let ch1_19_3 = new Scene('Yes! See you there.','hThomas', 'gym', ch1, [ch1_20], 'ch1_19_3_audio');
+let ch1_19_2 = new Scene('Okay then… sorry for bothering you. (game ends, player lost)','sThomas', 'gym', ch1, [], 'ch1_19_2_audio');
+let ch1_19_1 = new Scene('Oh… that’s okay. Maybe next time. (game ends, player lost)','sThomas', 'gym', ch1, [], 'ch1_19_1_audio');
 let ch1_19 = new Scene('Hey! $n right? It’s kinda sudden, but would you mind joining us this Friday after school in the theater to write a play? I’ve heard a lot about your stories.', 'hThomas', 'gym', ch1, [
     {
         'text': 'I can’t… sorry.', 
@@ -31,9 +32,9 @@ let ch1_17 = new Scene('Look $n, that’s him. The one with the blond hair. Isn�
         'nextScene': ch1_18
     }
 ],"ch1_17_audio");
-let ch1_16_3 = new Scene('What’s wrong with you? Have you seen him?', 'hPatricia', 'hallway', ch1, [ch1_17]);
-let ch1_16_2 = new Scene('That’s ‘cause you have no taste. Your fictional characters set the standard too high. You gotta see him for yourself.', 'hPatricia', 'hallway', ch1, [ch1_17]);
-let ch1_16_1 = new Scene('Are you serious?? Only the nicest, handsomest, bestest guy in the school!', 'hPatricia', 'hallway', ch1, [ch1_17]);
+let ch1_16_3 = new Scene('What’s wrong with you? Have you seen him?', 'hPatricia', 'hallway', ch1, [ch1_17], 'ch1_16_3_audio');
+let ch1_16_2 = new Scene('That’s ‘cause you have no taste. Your fictional characters set the standard too high. You gotta see him for yourself.', 'hPatricia', 'hallway', ch1, [ch1_17], 'ch1_16_2_audio');
+let ch1_16_1 = new Scene('Are you serious?? Only the nicest, handsomest, bestest guy in the school!', 'hPatricia', 'hallway', ch1, [ch1_17], 'ch1_16_1_audio');
 let ch1_16 = new Scene('I don’t like theater at all, but I would join for Thomas.', 'hPatricia', 'hallway', ch1, [
     {
         'text': 'Who’s Thomas?', 
@@ -62,9 +63,9 @@ let ch1_6 = new Scene('I don’t have a name, bro.', 'sBody', 'classroom', ch1, 
 let ch1_5 = new Scene('I don’t have a favorite color, bro.', 'sBody', 'classroom', ch1, [ch1_6],"ch1_5_audio");
 let ch1_4 = new Scene('WHYY! This is, like, the twelfth time now.', 'sBody', 'classroom', ch1, [ch1_5],"ch1_4_audio");
 let ch1_3 = new Scene('What a lovely group of students. Okay, class. We’re going to start off with a little ice breaker. When I call on you, introduce yourself and tell us your favorite color, hobby, and goal for this year. Got it?', 'nTeacher', 'classroom', ch1, [ch1_4],"ch1_3_audio");
-let ch1_2_3 = new Scene('No way! Isn’t it exciting? It’s gonna be sOOoOOOOO exciting.', 'hPatricia', 'hallway', ch1, [ch1_3]);
-let ch1_2_2 = new Scene('That’s the spirit!', 'hPatricia', 'hallway', ch1, [ch1_3]);
-let ch1_2_1 = new Scene('Hey, hey, hey, turn that frown upside down! It’ll be fun, you’ll see!', 'hPatricia', 'hallway', ch1, [ch1_3]);
+let ch1_2_3 = new Scene('No way! Isn’t it exciting? It’s gonna be sOOoOOOOO exciting.', 'hPatricia', 'hallway', ch1, [ch1_3], 'ch1_2_3_audio');
+let ch1_2_2 = new Scene('That’s the spirit!', 'hPatricia', 'hallway', ch1, [ch1_3], 'ch1_2_2_audio');
+let ch1_2_1 = new Scene('Hey, hey, hey, turn that frown upside down! It’ll be fun, you’ll see!', 'hPatricia', 'hallway', ch1, [ch1_3], 'ch1_2_1_audio');
 let ch1_2 = new Scene('First day of senior year! How are you feeling?', 'hPatricia', 'hallway', ch1,[
     {
         'text': 'I wanna go home.', 

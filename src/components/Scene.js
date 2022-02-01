@@ -23,7 +23,7 @@ class Scene {
     this.textColor = textColor;
     this.imgXoffset = 0;
     this.btnsTextColor = btnsTextColor;
-    this.audio = audioS;
+    this.audioS = audioS;
     this.chapter = chapter;
 
     
@@ -38,9 +38,9 @@ class Scene {
         this.choiceButtons[index].text = choice['text'];
         this.choiceButtons[index].onClick = () => {
           drawInject.func = choice['nextScene'].draw;
-          if (choice['nextScene'].audio != null) {
-            audio[choice['nextScene'].audio].play();
-            audio[this.audio].stop();
+          if (choice['nextScene'].audioS != null || choice['nextScene'].audioS != undefined) {
+            audio[choice['nextScene'].audioS].play();
+            audio[this.audioS].stop();
           }
           
           for (let btn of this.choiceButtons) {
@@ -65,10 +65,13 @@ class Scene {
         drawInject.func = this.choices[0].draw;
         nextBtn.drawn = false;
         homeBtn.drawn = false;
-        if (this.audio != null && this.choices[0].audio != null){
-        audio[this.choices[0].audio].play();
-        audio[this.audio].stop();
-      }
+        if (this.audioS != null || this.audioS != undefined) {
+          audio[this.audioS].stop();
+        }
+
+        if (this.choices[0].audioS != null || this.choices[0].audioS != undefined) {
+          audio[this.choices[0].audioS].play();
+        }
       }
       
     }, 'Next >', [buttons], textBoxColor, btnsTextColor, null, 'click'); 
