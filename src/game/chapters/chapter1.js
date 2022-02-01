@@ -1,8 +1,8 @@
 let ch1 = new Chapter('Chapter One', ch2);
 
 // scene("text character is saying", "characterimg", "backgroundimg", chapter, choices[])
-let ch1_21 = new Scene('What can I say? My stories are superb. What I read, what I write. It’s all in good taste.', 'hPatricia', 'gym', ch1, [],);
-let ch1_20 = new Scene('$n! $n! $n! I can’t believe he knows who you are. You’re, like, a nobody!', 'hPatricia', 'gym', ch1, [ch1_21],);
+let ch1_21 = new Scene('What can I say? My stories are superb. What I read, what I write. It’s all in good taste.', 'hPatricia', 'gym', ch1, []);
+let ch1_20 = new Scene('$n! $n! $n! I can’t believe he knows who you are. You’re, like, a nobody!', 'hPatricia', 'gym', ch1, [ch1_21]);
 let ch1_19_3 = new Scene('Yes! See you there.','hThomas', 'gym', ch1, [ch1_20]);
 let ch1_19_2 = new Scene('Okay then… sorry for bothering you. (game ends, player lost)','sThomas', 'gym', ch1, []);
 let ch1_19_1 = new Scene('Oh… that’s okay. Maybe next time. (game ends, player lost)','sThomas', 'gym', ch1, []);
@@ -54,9 +54,9 @@ let ch1_14 = new Scene('Theater club? What theater club?', 'empty', 'transition'
 let ch1_13 = new Scene('OMG! Isn’t Thomas in that club? You mean the most prominent actor in this school’s history? Of course! Oh, please, you give him too much credit. He’s cute, though.', 'sBody', 'classroom', ch1, [ch1_14],"ch1_13_audio");
 let ch1_12 = new Scene('Nice to meet you, Ami. You might want to consider joining drama club. I hear they’re putting a play together.', 'nTeacher', 'classroom', ch1, [ch1_13],"ch1_12_audio");
 let ch1_11 = new Scene('Hello, I’m Ami~~~~~~~~. Pink is the new black, I love socializing, and my goal for this year is to get the lead role in a play.', 'hAmi', 'classroom', ch1, [ch1_12],"ch1_11_audio");
-let ch1_10 = new Scene('*giggling obnoxiously*', 'hAmi', 'classroom', ch1, [ch1_11],);
+let ch1_10 = new Scene('*giggling obnoxiously*', 'hAmi', 'classroom', ch1, [ch1_11]);
 let ch1_9 = new Scene('Hmm… what an interesting goal. Nice to meet you, $n. Next up is Ami.', 'nTeacher', 'classroom', ch1, [ch1_10],"ch1_9_audio");
-let ch1_8 = new Scene('Uh… Hi… I’m $n. I don’t have a favorite color. I love reading, especially mythology. My goal for this year is to graduate with no regrets.', 'nTeacher', 'classroom', ch1, [ch1_9],);
+let ch1_8 = new Scene('Uh… Hi… I’m $n. I don’t have a favorite color. I love reading, especially mythology. My goal for this year is to graduate with no regrets.', 'nTeacher', 'classroom', ch1, [ch1_9]);
 let ch1_7 = new Scene('Now, now, settle down. $n, why don’t we start with you?', 'nTeacher', 'classroom', ch1, [ch1_8],"ch1_7_audio");
 let ch1_6 = new Scene('I don’t have a name, bro.', 'sBody', 'classroom', ch1, [ch1_7],"ch1_6_audio");
 let ch1_5 = new Scene('I don’t have a favorite color, bro.', 'sBody', 'classroom', ch1, [ch1_6],"ch1_5_audio");
