@@ -23,7 +23,8 @@ class Scene {
     this.textColor = textColor;
     this.imgXoffset = 0;
     this.btnsTextColor = btnsTextColor;
-    this.audio = audioS;
+    this.audioS = audioS;
+    this.chapter = chapter;
 
     
     if (this.choices.length > 1) {
@@ -37,9 +38,9 @@ class Scene {
         this.choiceButtons[index].text = choice['text'];
         this.choiceButtons[index].onClick = () => {
           drawInject.func = choice['nextScene'].draw;
-          if (choice['nextScene'].audio != null) {
-            audio[choice['nextScene'].audio].play();
-            audio[this.audio].stop();
+          if (choice['nextScene'].audioS != null || choice['nextScene'].audioS != undefined) {
+            audio[choice['nextScene'].audioS].play();
+            audio[this.audioS].stop();
           }
           
           for (let btn of this.choiceButtons) {
@@ -54,21 +55,23 @@ class Scene {
 
      
     let nextBtn = new Button(1075, 685, 60, 20, () => {
-      console.log(this.choices.length);
       if (this.choices.length == 0) {
         nextBtn.drawn = false;
         homeBtn.drawn = false;
-        let endchapter = new endOfchapter('End of ' + this.chapter.chtext , this.chapter.nextCh);
+        let endchapter = new endOfchapter('End of ' + this.chapter.chText , this.chapter.nextCh);
         drawInject.func = endchapter.draw;
         
       } else {
         drawInject.func = this.choices[0].draw;
         nextBtn.drawn = false;
         homeBtn.drawn = false;
-        if (this.audio != null && this.choices[0].audio != null){
-        audio[this.choices[0].audio].play();
-        audio[this.audio].stop();
-      }
+        if (this.audioS != null || this.audioS != undefined) {
+          audio[this.audioS].stop();
+        }
+
+        if (this.choices[0].audioS != null || this.choices[0].audioS != undefined) {
+          audio[this.choices[0].audioS].play();
+        }
       }
       
     }, 'Next >', [buttons], textBoxColor, btnsTextColor, null, 'click'); 
@@ -81,6 +84,7 @@ class Scene {
       }
     }
       showMenu = true;
+      audio['menubgm'].play();
     }, 'Home', [buttons], textBoxColor, btnsTextColor, null, 'click');
 
     this.draw = () => {
