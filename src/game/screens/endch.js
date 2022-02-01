@@ -26,9 +26,10 @@ class endOfchapter {
             textAlign(CENTER);
             text(this.text, 600, 300);
             textAlign();
-            this.endNextBtn.draw();
+            this.endhomeBtn.draw();
+            
             if (this.nextCh != null) {
-                this.endhomeBtn.draw();
+                this.endNextBtn.draw();
             }
             
         }

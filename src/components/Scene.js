@@ -24,6 +24,7 @@ class Scene {
     this.imgXoffset = 0;
     this.btnsTextColor = btnsTextColor;
     this.audio = audioS;
+    this.chapter = chapter;
 
     
     if (this.choices.length > 1) {
@@ -54,11 +55,10 @@ class Scene {
 
      
     let nextBtn = new Button(1075, 685, 60, 20, () => {
-      console.log(this.choices.length);
       if (this.choices.length == 0) {
         nextBtn.drawn = false;
         homeBtn.drawn = false;
-        let endchapter = new endOfchapter('End of ' + this.chapter.chtext , this.chapter.nextCh);
+        let endchapter = new endOfchapter('End of ' + this.chapter.chText , this.chapter.nextCh);
         drawInject.func = endchapter.draw;
         
       } else {
