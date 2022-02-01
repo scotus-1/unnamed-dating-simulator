@@ -57,4 +57,5 @@ function preload() {
     audio.ch1_19_1_audio = loadSound('assets/audio/chapter1/ch1_19_1_audio.mp3');
     audio.ch1_19_2_audio = loadSound('assets/audio/chapter1/ch1_19_2_audio.mp3');
     audio.ch1_19_3_audio = loadSound('assets/audio/chapter1/ch1_19_3_audio.mp3');
+    audio.ch1_20_audio = loadSound('assets/audio/chapter1/ch1_20_audio.mp3');
 }
