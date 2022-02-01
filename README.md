@@ -8,3 +8,4 @@ todo:
     - same background for main menu, chmenu, and credits
     - better end of chapter
     - better main menu
+    - better background for text box
