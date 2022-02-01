@@ -1,10 +1,10 @@
 function runChapter(chapter) {
     if (username) {
-        let currentScene = chapter.scenes[chapter.length - 1];
+        let currentScene = chapter.scenes[chapter.scenes.length - 1];
         drawInject.func = currentScene.draw;
         showChapterScreen = false;
-        if (currentScene.audio != null) {
-        audio[currentScene.audio].play();
+        if (currentScene.audioS != null && currentScene.audioS != undefined) {
+        audio[currentScene.audioS].play();
         }
     } else {
         drawInject.func = () => {text('Please enter a username before starting:', 400, 75);};
@@ -15,7 +15,9 @@ function runChapter(chapter) {
     }
     startBtn.drawn = false;
     creditBtn.drawn = false;
+    audio['menubgm'].stop();
 }
+
 
 let chapterButtons = [];
 let chapter1Btn = new Button(100, 200, 300, 200, () => {
