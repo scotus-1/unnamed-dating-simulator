@@ -28,6 +28,8 @@ function preload() {
 
 
     soundFormats('mp3');
+    audio.menubgm = loadSound('assets/audio/bgm.mp3');
+
     audio.click = loadSound('assets/audio/btn_click_audio.mp3');
     
 

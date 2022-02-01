@@ -15,6 +15,7 @@ function runChapter(chapter) {
     }
     startBtn.drawn = false;
     creditBtn.drawn = false;
+    audio['menubgm'].stop();
 }
 
 

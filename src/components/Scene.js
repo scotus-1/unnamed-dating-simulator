@@ -84,6 +84,7 @@ class Scene {
       }
     }
       showMenu = true;
+      audio['menubgm'].play();
     }, 'Home', [buttons], textBoxColor, btnsTextColor, null, 'click');
 
     this.draw = () => {

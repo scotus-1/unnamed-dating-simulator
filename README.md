@@ -2,10 +2,10 @@ todo:
 - basic voice acting - alan - nick
     - add all audio files and preload
     - add all audio files to scenes
-- menu music - titus
 - fade in/out animation? - titus
+- settings screen for audio? - titus
 - general polish - danica
     - same background for main menu, chmenu, and credits
     - better end of chapter
-    - better main menu
     - better background for text box
+    - better credits

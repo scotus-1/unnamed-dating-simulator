@@ -27,6 +27,10 @@ function setup() {
       nameInput.value(nameInput.value().slice(0, -1));
     }
   });
+  audio['menubgm'].loop();
+  audio['menubgm'].setVolume(0.1);
+  audio['menubgm'].play();
+  
 
 }
 
