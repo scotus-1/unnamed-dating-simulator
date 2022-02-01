@@ -1,4 +1,4 @@
-let ch5 = [];
+let ch5 = new Chapter('Game');
 
 //The End
 let ch5_9 = new Scene("Let’s do it.","hThomas","backstage",ch5,[]);

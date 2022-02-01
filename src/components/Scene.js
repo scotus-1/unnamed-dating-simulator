@@ -49,7 +49,7 @@ class Scene {
         index++;
       }
   }
-    chapter.push(this);
+    chapter.scenes.push(this);
 
 
      
@@ -57,11 +57,14 @@ class Scene {
       console.log(this.choices.length);
       if (this.choices.length == 0) {
         nextBtn.drawn = false;
-        drawInject.func = () => {};
-        showMenu = true;
+        homeBtn.drawn = false;
+        let endchapter = new endOfchapter('End of ' + this.chapter.chtext , this.chapter.nextCh);
+        drawInject.func = endchapter.draw;
+        
       } else {
         drawInject.func = this.choices[0].draw;
         nextBtn.drawn = false;
+        homeBtn.drawn = false;
         if (this.audio != null && this.choices[0].audio != null){
         audio[this.choices[0].audio].play();
         audio[this.audio].stop();
