@@ -1,0 +1,22 @@
+{
+  "name": "unnamed-dating-simulator",
+  "version": "1.0.0",
+  "description": "Unnamed Dating Simulator",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scotus-1/unnamed-dating-simulator.git"
+  },
+  "author": "scotus-1",
+  "license": "UNLICENSED",
+  "bugs": {
+    "url": "https://github.com/scotus-1/unnamed-dating-simulator/issues"
+  },
+  "homepage": "https://github.com/scotus-1/unnamed-dating-simulator#readme",
+  "devDependencies": {
+    "electron": "^17.0.0"
+  }
+}
