@@ -25,6 +25,7 @@
       "category": "scotus1.uds.game.development"
     }
   },
+  "postinstall": "electron-builder install-app-deps",
   "homepage": "https://github.com/scotus-1/unnamed-dating-simulator#readme",
   "devDependencies": {
     "@electron-forge/cli": "^6.0.0-beta.63",
