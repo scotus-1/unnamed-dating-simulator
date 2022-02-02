@@ -5,7 +5,5 @@ todo:
 - fade in/out animation? - titus
 - settings screen for audio? - titus
 - general polish - danica
-    - same background for main menu, chmenu, and credits
-    - better end of chapter
     - better background for text box
-    - better credits
+    - add background for username input
