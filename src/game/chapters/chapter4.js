@@ -16,4 +16,4 @@ let ch4_5 = new Scene("Do you, Luke Vulpin, take Stella Archivald to be your law
 let ch4_4 = new Scene("As you half-remember that you only wrote half of the script and didn't read the rest of the ending that the other writing students had finished, you're pushed out onto the stage.", 'empty', 'transition', ch4, [ch4_5], null,  'black', 'white', 'white');
 let ch4_3 = new Scene("Remember this is the most important scene. The ending scene. Break a leg.","will","backstage",ch4,[ch4_4]);
 let ch4_2 = new Scene("Yeah, yeah.","will","backstage",ch4,[ch4_3]);
-let ch4_1 = new Scene("Here’s the deal, $n. You literally wrote the script, so you know your lines. But you really gotta get into it, okay? You’re his lover, not his business partner.","will","backstage",ch4,[ch4_2]);
+let ch4_1 = new Scene("Here’s the deal, $n. You literally wrote the script, so you know your lines. But you really gotta get into it, okay? You’re his lover, not his business partner.","will","backstage",ch4,[ch4_2],);
