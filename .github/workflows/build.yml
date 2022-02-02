@@ -25,6 +25,11 @@ jobs:
           npm run make
       - name: List files
         run: find .
-
+- name: Upload a Build Artifact
+  uses: actions/upload-artifact@v2.3.1
+  with:
+    name: uds-${{matrix.os}}.zip
+    if: ${{matrix.os}} == 'macos-latest'
+       path: ./out/make/zip/darwin/x64/
       
 
