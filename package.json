@@ -6,7 +6,9 @@
   "scripts": {
     "start": "electron-forge start",
     "package": "electron-forge package",
-    "make": "electron-forge make"
+    "make": "electron-forge make",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,12 @@
   "bugs": {
     "url": "https://github.com/scotus-1/unnamed-dating-simulator/issues"
   },
+  "build": {
+    "appId": "scotus1.uds",
+    "mac": {
+      "category": "scotus1.uds.game.development"
+    }
+  },
   "homepage": "https://github.com/scotus-1/unnamed-dating-simulator#readme",
   "devDependencies": {
     "@electron-forge/cli": "^6.0.0-beta.63",
@@ -24,7 +32,8 @@
     "@electron-forge/maker-rpm": "^6.0.0-beta.63",
     "@electron-forge/maker-squirrel": "^6.0.0-beta.63",
     "@electron-forge/maker-zip": "^6.0.0-beta.63",
-    "electron": "^17.0.0"
+    "electron": "^17.0.0",
+    "electron-builder": "^22.14.5"
   },
   "dependencies": {
     "electron-squirrel-startup": "^1.0.0"
