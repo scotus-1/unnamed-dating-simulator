@@ -1,9 +1,9 @@
-const { app, BrowserWindow } = require('electron');
+const { app, BrowserWindow, nativeTheme } = require('electron');
 
 function createWindow () {
     const win = new BrowserWindow({
-      width: 1300,
-      height: 760,
+      width: 1280,
+      height: 749,
       resizable: false,
       icon: 'favicon.ico'
     })
@@ -14,6 +14,8 @@ function createWindow () {
     win.once('ready-to-show', () => {
       win.show()
     })
+
+    nativeTheme.themeSource = 'dark';
 };
 
 
