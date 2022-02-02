@@ -28,6 +28,8 @@ function setup() {
       nameInput.value(nameInput.value().slice(0, -1));
     }
   });
+  audio['chbgm'].loop();
+  audio['chbgm'].setVolume(0.1);
   audio['menubgm'].loop();
   audio['menubgm'].setVolume(0.1);
   audio['menubgm'].play();
@@ -40,7 +42,7 @@ function mouseClicked() {
   for (let button of buttons) {
     if (((mouseX >= button.x) && (mouseX <= (button.x + button.length))) && ((mouseY >= button.y) && (mouseY <= (button.y + button.width))) && button.drawn) {
       button.onClick();
-      if (button.audio != null){
+      if (button.audio != null || button.audio != undefined){
         audio[button.audio].play(); 
       }
     }

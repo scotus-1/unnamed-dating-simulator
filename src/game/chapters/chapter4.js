@@ -1,4 +1,4 @@
-let ch4 = new Chapter('Chapter Four', ch5);
+let ch4 = new Chapter('Chapter Four', ch5, () => {audio['chbgm'].stop();});
 
 let ch4_17 = new Scene("I’ll find that killer. I’ll put an end to him once and for all.","nThomas","stage",ch4,[]);
 let ch4_16 = new Scene("Maybe… in the next life.","hThomas","stage",ch4,[ch4_17],"ch4_16_audio");

@@ -13,9 +13,18 @@ function runChapter(chapter) {
     for (let btn of chapterButtons) {
         btn.drawn = false;
     }
+
+
+
+
     startBtn.drawn = false;
     creditBtn.drawn = false;
     audio['menubgm'].stop();
+    audio['chbgm'].play();
+    if (chapter.beforefunc != undefined) {
+        chapter.beforefunc();
+    }
+    
 }
 
 

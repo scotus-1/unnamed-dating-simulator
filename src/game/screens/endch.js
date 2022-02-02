@@ -18,6 +18,7 @@ class endOfchapter {
             this.endNextBtn.drawn = false;
             showMenu = true;
             audio['menubgm'].play();
+            audio['chbgm'].stop();
         }, 'Back to Home', [buttons], 'gray', 'white', null, 'click', 2);
 
         this.draw = () => {

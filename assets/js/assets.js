@@ -29,7 +29,7 @@ function preload() {
 
     soundFormats('mp3');
     audio.menubgm = loadSound('assets/audio/bgm.mp3');
-
+    audio.chbgm = loadSound('assets/audio/ensolarado.mp3');
     audio.click = loadSound('assets/audio/btn_click_audio.mp3');
     
 
