@@ -9,6 +9,7 @@ function createWindow () {
     })
   
     win.loadFile('index.html')
+    nativeTheme.themeSource = 'dark';
     win.setMenu(null);
 
     win.once('ready-to-show', () => {
