@@ -3,7 +3,7 @@ let ch1 = new Chapter('Chapter One', ch2);
 // scene("text character is saying", "characterimg", "backgroundimg", chapter, choices[])
 // add ch1_20
 let ch1_21 = new Scene('What can I say? My stories are superb. What I read, what I write. It’s all in good taste.', 'empty', 'gym', ch1, []);
-let ch1_20 = new Scene('$n! $n! $n! I can’t believe he knows who you are. You’re, like, a nobody!', 'hPatricia', 'gym', ch1, [ch1_21]);
+let ch1_20 = new Scene('$n! $n! $n! I can’t believe he knows who you are. You’re, like, a nobody!', 'hPatricia', 'gym', ch1, [ch1_21], 'ch1_20_audio');
 let ch1_19_3 = new Scene('Yes! See you there.','hThomas', 'gym', ch1, [ch1_20], 'ch1_19_3_audio');
 let ch1_19_2 = new Scene('Okay then… sorry for bothering you. (game ends, player lost)','sThomas', 'gym', ch1, [], 'ch1_19_2_audio');
 let ch1_19_1 = new Scene('Oh… that’s okay. Maybe next time. (game ends, player lost)','sThomas', 'gym', ch1, [], 'ch1_19_1_audio');
