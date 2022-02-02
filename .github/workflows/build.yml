@@ -1,4 +1,4 @@
-name: electron-builder
+name: electron
 
 on: push
 
@@ -23,12 +23,14 @@ jobs:
         run: | 
           npm install
           npm run make
-      - name: List files
-        run: find .
+      
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v2.3.1
         with:
            name: uds-${{matrix.os}}.zip
-           path: ./out/make/zip/darwin/x64/
+           path: | 
+              ./out/make/zip/darwin/x64/
+              ./out/make/zip/windows/x64
+
       
 
