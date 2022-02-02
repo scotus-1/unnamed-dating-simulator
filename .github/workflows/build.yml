@@ -8,7 +8,7 @@ jobs:
 
     strategy:
       matrix:
-        os: [windows-latest]
+        os: [windows-latest, macos-latest]
 
     steps:
       - name: Check out Git repository
@@ -24,16 +24,14 @@ jobs:
           npm install
           npm run make
 
-      - name: list
-        run: Get-ChildItem -Path ./out/ –Recurse
       
-      - name: Upload a Build Artifact
+      - name: Upload executables
         uses: actions/upload-artifact@v2.3.1
         with:
            name: uds-${{matrix.os}}
            path: | 
               ./out/make/zip/darwin/x64/
-              ./out/make/zip/windows/x64/
+              ./out/make/squirrel.windows/x64/*.exe
 
       
 
