@@ -27,10 +27,10 @@ jobs:
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v2.3.1
         with:
-           name: uds-${{matrix.os}}.zip
+           name: uds-${{matrix.os}}
            path: | 
               ./out/make/zip/darwin/x64/
-              ./out/make/zip/windows/x64
+              ./out/make/zip/windows/x64/
 
       
 
