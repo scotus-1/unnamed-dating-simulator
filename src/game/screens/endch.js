@@ -37,12 +37,12 @@ class endOfchapter {
 
             stroke('pink');
             strokeWeight(2);
-            textSize(15);
+            textSize(20);
             this.endhomeBtn.draw();
             
             if (this.nextCh != null) {
                 stroke('pink');
-                textSize(15);
+                textSize(20);
                 strokeWeight(2);
                 this.endNextBtn.draw();
                 
