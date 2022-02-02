@@ -17,6 +17,7 @@ let buttons = [];
 
 
 function setup() {
+  document.getElementById('loading').remove();
   createCanvas(l, w);
   nameInput = createInput('');
   nameInput.position(400, 100);
