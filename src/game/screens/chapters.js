@@ -40,7 +40,10 @@ let chapter5Btn = new Button(500, 500, 300, 200, () => {
 
 function chapters() {
     image(images['menuBG'],0,0,l,w);
-    //rect
+    stroke('pink');
+    strokeWeight(3);
+    fill('gray');
+    rect(375, 30, 460, 120, 2);
     drawInject.func = () => {text('Please enter a username before starting:', 400, 75);};
     textAlign('right');
     textSize(20);
