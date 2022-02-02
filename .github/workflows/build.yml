@@ -24,7 +24,7 @@ jobs:
           npm install
           npm run make
       - name: List files
-          find .
+        run: find .
 
       
 
