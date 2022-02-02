@@ -14,8 +14,6 @@ function createWindow () {
     win.once('ready-to-show', () => {
       win.show()
     })
-
-    nativeTheme.themeSource = 'dark';
 };
 
 
