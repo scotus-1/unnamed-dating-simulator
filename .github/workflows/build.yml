@@ -29,7 +29,6 @@ jobs:
         uses: actions/upload-artifact@v2.3.1
         with:
            name: uds-${{matrix.os}}.zip
-           if: ${{matrix.os}} == 'macos-latest'
-              path: ./out/make/zip/darwin/x64/
+           path: ./out/make/zip/darwin/x64/
       
 
