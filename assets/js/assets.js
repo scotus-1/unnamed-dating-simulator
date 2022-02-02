@@ -75,4 +75,21 @@ function preload() {
     audio.ch3_4_audio = loadSound('assets/audio/chapter3/ch3_4_audio.mp3');
     audio.ch3_5_audio = loadSound('assets/audio/chapter3/ch3_5_audio.mp3');
     audio.ch3_5_1_audio = loadSound('assets/audio/chapter3/ch3_5_1_audio.mp3');
+
+    audio.ch4_1_audio = loadSound('assets/audio/chapter4/ch4_1_audio.mp3');
+    audio.ch4_3_audio = loadSound('assets/audio/chapter4/ch4_3_audio.mp3');
+    audio.ch4_5_audio = loadSound('assets/audio/chapter4/ch4_5_audio.mp3');
+    audio.ch4_7_audio = loadSound('assets/audio/chapter4/ch4_7_audio.mp3');
+    audio.ch4_8_audio = loadSound('assets/audio/chapter4/ch4_8_audio.mp3');
+    audio.ch4_9_audio = loadSound('assets/audio/chapter4/ch4_9_audio.mp3');
+    audio.ch4_10_audio = loadSound('assets/audio/chapter4/ch4_10_audio.mp3');
+    audio.ch4_12_audio = loadSound('assets/audio/chapter4/ch4_12_audio.mp3');
+    audio.ch4_14_audio = loadSound('assets/audio/chapter4/ch4_14_audio.mp3');
+    audio.ch4_16_audio = loadSound('assets/audio/chapter4/ch4_16_audio.mp3');
+
+    audio.ch5_2_audio = loadSound('assets/audio/chapter5/ch5_2_audio.mp3');
+    audio.ch5_3_audio = loadSound('assets/audio/chapter5/ch5_3_audio.mp3');
+    audio.ch5_5_audio = loadSound('assets/audio/chapter5/ch5_5_audio.mp3');
+    audio.ch5_7_audio = loadSound('assets/audio/chapter5/ch5_7_audio.mp3');
+    audio.ch5_8_audio = loadSound('assets/audio/chapter5/ch5_8_audio.mp3');
 }
