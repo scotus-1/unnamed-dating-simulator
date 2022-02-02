@@ -78,6 +78,9 @@ class Scene {
     let homeBtn = new Button(120, 685, 60, 20, () => {
       drawInject.func = () => {};
       nextBtn.drawn = false;
+      if (this.audioS != null || this.audioS != undefined) {
+        audio[this.audioS].stop();
+      }
       if (this.choices.length > 1){
       for (let btn of this.choiceButtons) {
         btn.drawn = false;
